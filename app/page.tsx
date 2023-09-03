@@ -2,6 +2,7 @@ import { Button } from "@/components/Button/Button";
 import { Htag } from "@/components/Htag/Htag";
 import Logo from '../public/vercel.svg';
 import { Paragraph } from "@/components/Paragraph/Paragraph";
+import { Tag } from "@/components/Tag/Tag";
 
 
 
@@ -13,8 +14,13 @@ export default function Home(): JSX.Element {
       <Paragraph size="s">dsdfkjsdhfkkadskjhfgadsfjhgsadf dfsfd sdfsddd</Paragraph>
       <Paragraph >dsdfkjsdhfkkadskjhfgadsfjhgsadf dfsfd sdfsddd</Paragraph>
       <Paragraph size="l">dsdfkjsdhfkkadskjhfgadsfjhgsadf dfsfd sdfsddd</Paragraph>
+      <Tag size='s' color="red">Маленький</Tag>
+      <Tag color="ghost">Маленький</Tag>
+      <Tag size='m' color="grey">sddsd</Tag>
+      <Tag size='s' color="green">asd</Tag>
+      <Tag size='s' color="primary">asd</Tag>
       <Button appearance="primary" arrow="right">Кнопка</Button>
       <Button appearance="ghost" arrow="down">Кнопка</Button>
-    </main>
+    </main >
   );
 }
