@@ -2,7 +2,7 @@ import { Footer } from './components/Footer/Footer';
 import { Header } from './components/Header/Header';
 import { Sidebar } from './components/Sidebar/Sidebar';
 import './globals.css';
-import styles from './page.module.css';
+import styles from './layout.module.css';
 import type { Metadata } from 'next';
 import { Noto_Sans } from 'next/font/google';
 
@@ -21,10 +21,13 @@ export default function RootLayout({
   return (
     <html lang="uk">
       <body className={noto.className}>
-        <Header className={styles.header} />
-        <Sidebar className={styles.sidebar} />
-        {children}
-        <Footer className={styles.footer} />
+        <div className={styles.wrapper}>
+          <Header className={styles.header} />
+          <Sidebar className={styles.sidebar} />
+          <div className={styles.body}>{children}</div>
+          <Footer className={styles.footer} />
+        </div>
+
       </body>
     </html>
   );
